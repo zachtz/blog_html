@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="header">
+		<div class="logo">
+			<h1>
+				<a href="/">blogApp</a>
+			</h1>
+		</div>
+		<div class="navbar">
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+
+				<li>
+					<a href="/log_in">Login</a>
+				</li>
+				<li>
+					<a href="/sign_up">Register</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="clear"></div>
+	<!-- Wrapper Stars -->
+	<div id="wrapper">
+		<!-- Section Left Starts -->
+		<div class="section_left">
+			<ul id="left_nav">
+				<li class="home">
+					<a href="#">Welcome John Doe</a>
+				</li>
+				<li class="contacts">
+
+					<a href="/manage_users">Manage Users</a>
+				</li>
+				<li class="activities">
+					<a href="#">Activy Stream</a>
+				</li>
+
+			</ul>
+		</div>
+		<!-- Section Left Ends -->
+
+		<!-- Section left Starts -->
+		<div class="section_right">
+			<div id="flash">
+				<div id="close">x</div>
+			</div>
+			<h2>Sign Up / Register</h2>
+
+			<div class="holder">
+				<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+					<div style="margin:0;padding:0;display:inline">
+						<input name="utf8" type="hidden" value="&#x2713;" />
+						<input name="authenticity_token" type="hidden" value="29ABMn9Hq4JFR4BtE+ZlNVaZ+VAdZpxM9hF0i1ThhOA=" />
+					</div>
+					<p>User Name</p>
+					<input id="user_username" name="user[username]" size="30" type="text" />
+
+					<p>Email</p>
+					<input id="user_email" name="user[email]" size="30" type="text" />
+
+					<p>Password</p>
+					<input id="user_password" name="user[password]" size="30" type="password" />
+
+					<p>Confirm Password</p>
+					<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
+					<p>
+						<input name="commit" type="submit" value="Create User" />
+					</p>
+				</form>
+			</div>
+			<div id="clear"></div>
+		</div>
+		<!-- Section left ends -->
+
+	</div>
+	<!-- Section Right Ends -->
+	<div id="clear"></div>
+
+	<!-- Wrapper Ends -->
+	<div id="clear"></div>
+	<!-- Footer Starts -->
+	<div id="footer">
+		<ul>
+			<li>
+				<a href="#">Blog</a>
+			</li>
+			<li>
+				<a href="#">Terms & Conditions</a>
+			</li>
+			<li>
+				<a href="#">Privacy Policy</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Footer Ends -->
+</body>
+</html>
